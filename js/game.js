@@ -63,6 +63,11 @@ class Game{
                 text(allPlayers[plr].name,x-25,y+25);
                          
              }
+             fill("red");
+             textSize(20);
+             text("Player1 : "+ allPlayers.player1.score, 50,50);
+             text("Player2 : "+ allPlayers.player2.score, 50,70);
+            
          }
                 
         if (keyIsDown(RIGHT_ARROW) && player.index !== null) {
@@ -105,11 +110,7 @@ class Game{
             }
         }
 
-        fill("red");
-        textSize(20);
-        text("Player1 : "+ this.score, 50,50);
-        text("Player2 : "+ this.score, 50,70);
-        console.log(this.score)
+       
     }
 
     end(){
